@@ -1,0 +1,17 @@
+{
+  "name": "react-core",
+  "license": "MIT",
+  "tags": [
+    "react",
+    "react-native"
+  ],
+  "classPath": "src",
+  "contributors": [
+    "kevinresol"
+  ],
+  "releasenote": "initial release",
+  "version": "0.0.0",
+  "dependencies": {
+    "react": ""
+  }
+}
