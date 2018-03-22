@@ -2,9 +2,10 @@ package react.component.props;
 
 import react.ReactComponent;
 
-typedef Props = {
+typedef Props = PropsWithChildren<Children>;
+typedef PropsWithChildren<C> = {
 	?ref:Any->Void,
-	?children:Children,
+	?children:C,
 	?key:Dynamic,
 }
 
