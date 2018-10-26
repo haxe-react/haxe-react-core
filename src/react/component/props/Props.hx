@@ -5,7 +5,12 @@ import react.ReactComponent;
 // TODO: just move these to haxe-react
 typedef Props = PropsWithChildren<react.ReactComponent.ReactFragment>;
 typedef PropsWithChildren<C> = {
-	?ref:Any->Void,
-	?children:C,
-	?key: #if coconut_react coconut.react.Key #else Dynamic #end,
+	@:optional var ref:Any->Void;
+	@:optional var children:C;
+	
+	#if coconut_react 
+	// @:optional var key(default, never):coconut.react.Key;
+	#else
+	@:optional var key:Dynamic;
+	#end
 }
